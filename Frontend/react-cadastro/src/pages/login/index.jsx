@@ -1,23 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import api from "../../services/api";
 
 function Login() {
   const emailRef = useRef();
   const passwordRef = useRef();
+  const navigate = useNavigate();
 
   async function handleSubmit(event) {
     event.preventDefault();
 
     try {
-      const data = await api.post("/login", {
+      const { data: token } = await api.post("/login", {
         email: emailRef.current.value,
         password: passwordRef.current.value,
       });
 
-      console.log(data);
+      localStorage.setItem("token", token);
 
-      alert("Login ok");
+      navigate("/listar-usuarios");
     } catch (error) {
       alert("Email ou Senha incorretos");
     }
