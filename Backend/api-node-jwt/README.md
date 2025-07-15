@@ -1,6 +1,19 @@
-## Funcionalidades
+## Estrutura e Funcionalidades
 
-- API REST básica utilizando Node.js e Express
-- Rotas organizadas em módulos
-- Middleware para tratamento de requisições
-- Integração com banco de dados via Prisma ORM
+- Cadastro de usuários com senha criptografada
+- O servidor utiliza Express.js para criar a API REST
+- Middleware `cors` habilitado para permitir requisições entre frontend e backend
+- Middleware de autenticação para proteger rotas privadas
+
+---
+
+## Tecnologias Utilizadas
+
+- Node.js
+- Express.js
+- Prisma ORM
+- MongoDB
+- bcrypt
+- jsonwebtoken (JWT)
+- cors
+- dotenv
