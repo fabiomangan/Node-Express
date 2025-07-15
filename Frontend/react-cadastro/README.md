@@ -1,12 +1,25 @@
-# React + Vite
+# Frontend - Sistema de Cadastro de Usuários
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão geral
 
-Currently, two official plugins are available:
+Desenvolvido em React.js para se comunicar com uma API backend, permitindo cadastro, login e listagem de usuários autenticados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Tela de cadastro
+- Tela de login com autenticação JWT
+- Armazenamento do token JWT no `localStorage`
+- Listagem protegida de usuários autenticados
+- Navegação entre páginas usando React Router
+- Estilização responsiva com Tailwind CSS
+
+---
+
+## Tecnologias utilizadas
+
+- React.js (hooks: `useState`, `useEffect`, `useRef`)
+- React Router DOM
+- Axios para requisições HTTP
+- Tailwind CSS para estilo
